@@ -1,7 +1,7 @@
 version: 2.1
 
 workflows:
-  pass-workflow:
+  passworkflow:
     jobs:
       - build:
           context:
