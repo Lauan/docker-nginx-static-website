@@ -1,0 +1,13 @@
+workflows:
+  pass-workflow:
+    jobs:
+      - build:
+          context:
+            - docker-login
+jobs:
+  build:
+    docker:
+      - image: lauan/static-website
+        auth:
+          username: lauan
+          password: $DOCKER_PASS
